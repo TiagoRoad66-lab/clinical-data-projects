@@ -15,6 +15,9 @@ Développer compétences SQL, Python, Data Quality et Gouvernance pour rôle Cli
 - [Roadmap complet](ROADMAP.md)
 - [Learning Log](LEARNING_LOG.md)
 
+## 🔗 Repos liés
+- [LeetCode SQL Solutions](https://github.com/TiagoRoad66-lab/SQL-50-leetcode) : solutions SQL 50
+
 ## 🛠️ Stack Technique
 SQL (PostgreSQL) | Python (Pandas) | Power BI | Git
 
