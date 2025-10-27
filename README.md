@@ -1,25 +1,42 @@
 # Clinical Data Projects
 
-Portfolio d'apprentissage autonome : data engineering clinique (6 mois)
+Self-paced learning portfolio: clinical data engineering (6 months)
 
-## 🎯 Objectif
-Développer compétences SQL, Python, Data Quality et Gouvernance pour rôle Clinical Data Manager.
+## 🎯 Objective
+Develop SQL, Python, Data Quality and Governance skills for Clinical Data Manager role.
 
-## 📂 Structure
-- `sql-validator/` : Projets SQL (CTEs, Window Functions, ETL)
-- `python-pipeline/` : Pipelines Python (Pandas, logging, CLI)
-- `data-quality-scorecard/` : Métriques qualité + Power BI
-- `governance/` : Documents gouvernance + RCA
+## 📂 Project Structure
 
-## 📚 Ressources
-- [Roadmap complet](data_manager_roadmap.md)
-- [Learning Log](LEARNING_LOG.md)
+### Completed Projects
+- **[Clinical Data Pipeline](https://github.com/TiagoRoad66-lab/clinical-data-pipeline)** (October 2025)
+  - Multi-site clinical trial data simulator with quality management
+  - Automated query generation following GCP principles
+  - Power BI dashboards for site monitoring
+  - Tech: Python (Faker, Pandas), PostgreSQL, Power BI
+  - [View Project Details →](https://github.com/TiagoRoad66-lab/clinical-data-pipeline)
 
-## 🔗 Repos liés
-- [LeetCode SQL Solutions](https://github.com/TiagoRoad66-lab/SQL-50-leetcode) : solutions SQL 50
+### In Progress
+- `sql-validator/` : SQL Projects (CTEs, Window Functions, ETL)
+- `python-pipeline/` : Python Pipelines (Pandas, logging, CLI)
+- `data-quality-scorecard/` : Quality Metrics + Power BI
+- `governance/` : Governance Docs + RCA
 
-## 🛠️ Stack Technique
-SQL (PostgreSQL) | Python (Pandas) | Power BI | Git
+## 📚 Documentation
+- [Complete Roadmap](data_manager_roadmap.md) - 6-month detailed plan
+- [Learning Log](LEARNING_LOG.md) - Weekly progress tracking
+
+## 🔗 Related Repositories
+- [LeetCode SQL Solutions](https://github.com/TiagoRoad66-lab/SQL-50-leetcode) - SQL 50 study plan solutions
+- [Clinical Data Pipeline](https://github.com/TiagoRoad66-lab/clinical-data-pipeline) - Multi-site trial simulator
+
+## 🛠️ Technical Stack
+**Languages & Tools:** SQL (PostgreSQL) | Python (Pandas, Faker) | Power BI | Git  
+**Clinical Standards:** GCP | CDISC awareness | Data Quality Management
+
+## 📈 Current Progress
+- ✅ Week 1: SQL Basics (7/50 LeetCode exercises)
+- ✅ Major Project: Clinical Data Pipeline (Complete)
+- 🔄 Week 2: SQL Advanced (CTEs + Window Functions)
 
 ## 📧 Contact
-x.tiago@hotmail.com
+x.tiago@hotmail.com |  Brussels, Belgium

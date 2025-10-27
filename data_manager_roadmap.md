@@ -1,189 +1,268 @@
-# Roadmap 6 mois – Clinical Data Manager
-## Checklist + Milestones + Tracking
+# 6-Month Roadmap – Clinical Data Manager
+## Checklist + Milestones + Progress Tracking
+
+**Start Date:** October 24, 2025  
+**Target Role:** Clinical Data Manager/Engineer  
+**Time Commitment:** 7-10 hours/week, long sessions  
+**Current Status:** Week 1 Complete + Bonus Major Project
 
 ---
 
-## SETUP INITIAL (À FAIRE CETTE SEMAINE)
+## 🎯 PROGRESS OVERVIEW
+
+### ✅ Completed (October 24-27, 2025)
+- **Initial Setup** - All infrastructure installed and configured
+- **Git/GitHub** - Repository created, linked, first commits
+- **LeetCode SQL** - 7/50 exercises completed
+- **🌟 BONUS: Clinical Data Pipeline** - Complete multi-site trial simulator (15-20 hours)
+
+### 🔄 In Progress
+- **LeetCode SQL** - Targeting 25/50 by end of Week 2
+- **SQL Advanced Concepts** - CTEs, Window Functions
+
+### 📅 Upcoming
+- Mock CRF Validator SQL project
+- Python pipeline development
+- Data Quality scorecard
+- Governance documentation
+
+---
+
+## INITIAL SETUP (WEEK 0) - ✅ COMPLETED
 
 ### Infrastructure
-- [ ] Installer PostgreSQL (Windows : postgresql.org/download/windows)
-- [ ] Installer DBeaver Community (dbeaver.io)
-- [ ] Installer VSCode (code.visualstudio.com)
-- [ ] Installer Anaconda / Python 3.11+ (anaconda.com)
-- [ ] Installer Git (git-scm.com)
-- [ ] Vérifier : `python --version`, `psql --version`, `git --version` (terminal/cmd)
+- [x] Install PostgreSQL (Windows: postgresql.org/download/windows)
+- [x] Install DBeaver Community (dbeaver.io)
+- [x] Install VSCode (code.visualstudio.com)
+- [x] Install Anaconda / Python 3.11+ (anaconda.com)
+- [x] Install Git (git-scm.com)
+- [x] Verify in terminal/cmd: `python --version`, `psql --version`, `git --version`
 
-### Compte & Repo
-- [ ] Créer GitHub account (si pas déjà)
-- [ ] Créer repo "clinical-data-projects" (public, MIT license)
-- [ ] Clone localement : `git clone <url>`
-- [ ] Créer structure folders :
+### Git Account & Repository
+- [x] Create GitHub account
+- [x] Create repository "clinical-data-projects" (public, MIT license)
+- [x] Clone locally: `git clone <url>`
+- [x] Create folder structure:
   ```
   clinical-data-projects/
   ├── README.md
+  ├── LEARNING_LOG.md
+  ├── data_manager_roadmap.md
   ├── sql-validator/
   ├── python-pipeline/
   ├── data-quality-scorecard/
   └── governance/
   ```
-- [ ] Premier commit : `git add . && git commit -m "Initial setup"`
+- [x] First commit: `git add . && git commit -m "Initial setup"`
 
-### Learning
-- [ ] S'inscrire Kaggle (kaggle.com) – gratuit
-- [ ] S'inscrire LeetCode (leetcode.com) – gratuit suffit
-- [ ] Mode Analytics SQL Tutorial (mode.com/sql-tutorial) – bookmark
-- [ ] Lire/imprimer ce plan complet
+### Learning Platforms
+- [x] Sign up for Kaggle (kaggle.com) – free
+- [x] Sign up for LeetCode (leetcode.com) – free tier sufficient
+- [x] Bookmark Mode Analytics SQL Tutorial (mode.com/sql-tutorial)
+- [x] Read/print this complete plan
 
-### Calendrier
-- [ ] Bloquer 3 créneaux/semaine (ex: lun 20h, mer 21h, sam 9h)
-- [ ] Ajouter dans calendrier : "LEARNING TIME – do not disturb"
+### Calendar
+- [x] Block 3 fixed time slots per week (e.g.: Mon 8pm, Wed 9pm, Sat 9am)
+- [x] Add to calendar: "LEARNING TIME – do not disturb"
 
 ---
 
-## MOIS 1-2 : SQL AVANCÉ
-### Objectif : Maîtriser CTE, Window Functions, ETL thinking
+## 🌟 BONUS PROJECT COMPLETED (October 2025)
 
-#### Semaine 1-2 : Fondations SQL Avancé
-**Concepts à apprendre :**
+### Clinical Data Pipeline - Multi-Site Trial Simulator
+**Status:** ✅ COMPLETE  
+**Repository:** [clinical-data-pipeline](https://github.com/TiagoRoad66-lab/clinical-data-pipeline)  
+**Time Invested:** 15-20 hours
+
+**What Was Built:**
+- Multi-site clinical trial data generator (120 subjects, 3 US sites)
+- Realistic CRF data across 5 domains (Screening, Demographics, Dosing, Vital Signs, Completion)
+- Automated data quality management with query generation
+- Power BI dashboards for site monitoring
+- Complete documentation (README, Technical Design Doc, Interview Guide)
+
+**Technical Implementation:**
+- Python (Faker, Pandas, SQLite)
+- PostgreSQL database (6 normalized tables)
+- Power BI visualizations
+- Git version control
+
+**Skills Demonstrated:**
+- Python data generation and ETL pipelines
+- Relational database design
+- Clinical trial workflow understanding (GCP principles)
+- Multi-site data management
+- Data quality and query management
+- Power BI dashboard creation
+
+**Key Features:**
+- Staggered site activation dates
+- Proper Day of Study calculation (First dose = Day 0)
+- Realistic data quality issues (missing values, out-of-range, inconsistencies)
+- Query tracking system (Critical/High/Medium priority)
+- Cross-site performance monitoring
+
+**Deliverables:**
+- [x] Complete Python pipeline code
+- [x] PostgreSQL database with 6 tables
+- [x] Power BI dashboard
+- [x] Comprehensive README
+- [x] Technical Design Document
+- [x] Interview Preparation Guide
+- [x] Project Layout Diagram
+
+---
+
+## MONTHS 1-2: ADVANCED SQL
+
+### Week 1-2: SQL Foundations - ✅ PARTIALLY COMPLETE
+
+**Concepts to Learn:**
+- [x] Basic SQL (SELECT, WHERE, ORDER BY, JOINs) - **Completed via LeetCode**
 - [ ] CTEs (Common Table Expressions) – theory
-- [ ] Window Functions – theory (ROW_NUMBER, RANK, LAG, LEAD, SUM OVER)
-- [ ] Subqueries vs JOINs – theory
-- [ ] EXPLAIN PLAN / Optimisation basique
+- [ ] Window Functions (ROW_NUMBER, RANK, LAG, LEAD, SUM OVER)
+- [ ] Subqueries vs JOINs – comparison
+- [ ] Basic optimization (indexes, EXPLAIN PLAN)
 
-**Ressources :**
-- [ ] Mode Analytics : CTE section (read + all exercises) → 2-3h
-- [ ] Mode Analytics : Window Functions section (read + all exercises) → 3-4h
-- [ ] Real Python : "SQL Window Functions" (if needed clarification)
+**Resources:**
+- [x] LeetCode SQL 50 - First 7 exercises completed
+- [ ] Mode Analytics: CTE section (read + all exercises) → 2-3h
+- [ ] Mode Analytics: Window Functions section (read + all exercises) → 3-4h
+- [ ] Real Python: "SQL Window Functions" (if clarification needed)
 
-**Exercices :**
-- [ ] LeetCode Database : 10 exercises (difficulty: Medium) → CTEs + Window Functions
-  - [ ] Exercise 1 : CTE basics
-  - [ ] Exercise 2-3 : Window functions ROW_NUMBER
-  - [ ] Exercise 4-5 : LAG/LEAD
-  - [ ] Exercise 6-10 : Mixed
+**Exercises:**
+- [x] LeetCode Database: 7/50 exercises completed (Basic SELECT, WHERE, JOIN)
+- [ ] LeetCode exercises 8-20 (focus on CTEs + Window Functions)
+- [ ] Additional 5 Medium exercises with Window Functions
 
-**Projet Semaine 1-2 : Mock Clinical Data Quality Report (SQL)**
+**Project Weeks 1-2: Mock Clinical Data Quality Report (SQL)**
 
 *Deliverable:* `sql-validator/01_mock_crf_validator.sql`
 
 Setup:
-- [ ] Télécharger dataset Kaggle : "Diabetes" ou "Heart Disease" ou créer mock
-- [ ] Importer dans PostgreSQL via DBeaver
-- [ ] Examiner structure (tables, colonnes)
+- [ ] Download Kaggle dataset: "Diabetes" or "Heart Disease" (or create mock)
+- [ ] Import into PostgreSQL via DBeaver
+- [ ] Examine structure (tables, columns)
 
-Requêtes à écrire (1 par jour environ) :
-- [ ] Q1 : Patients avec données manquantes par variable (COUNT NULL)
-- [ ] Q2 : Doublons potentiels (ROW_NUMBER PARTITION BY)
-- [ ] Q3 : Valeurs aberrantes (CASE WHEN, percentiles)
-- [ ] Q4 : Gaps temporels entre visites (LAG, DATEDIFF)
-- [ ] Q5 : Évolution temporelle incohérente (LAG + CASE)
-- [ ] Q6 : Résumé final (CTE + JOIN)
+Queries to write (approximately one per day):
+- [ ] Q1: Patients with missing data by variable (COUNT NULL)
+- [ ] Q2: Potential duplicates (ROW_NUMBER PARTITION BY)
+- [ ] Q3: Out-of-range values (CASE WHEN, percentiles)
+- [ ] Q4: Temporal gaps between visits (LAG, DATEDIFF)
+- [ ] Q5: Inconsistent temporal evolution (LAG + CASE)
+- [ ] Q6: Final summary (CTE + JOIN)
 
 Documentation:
-- [ ] Commenter chaque requête (logique + cas d'usage)
-- [ ] Créer fichier "QUERIES_EXPLANATION.md" → explique chaque validation
-- [ ] Export results → CSV
+- [ ] Comment each query (logic + clinical use case)
+- [ ] Create file "QUERY_EXPLANATIONS.md" explaining each validation
+- [ ] Export results to CSV
 
 GitHub:
-- [ ] Commit avec message : `feat: SQL validator – mock clinical data`
+- [ ] Commit with message: `feat: SQL validator – mock clinical data`
+
+**🎯 Current Progress:**
+- ✅ 7/50 LeetCode exercises (Basic SQL)
+- ✅ Repository structure created
+- 🔄 Targeting 25/50 by end of Week 2
 
 ---
 
-#### Semaine 3-4 : SQL + Clinical Thinking
-**Concepts :**
-- [ ] Schémas cliniques (patients, visits, labs, adverse_events, concomeds)
-- [ ] CDISC standards (basics) – parcourir structure
-- [ ] Data model thinking vs spreadsheet thinking
+### Week 3-4: SQL + Clinical Reality
 
-**Ressources :**
-- [ ] CDISC (cdisc.org) : parcourir "Standards Overview" → 30min
-- [ ] Kaggle : trouver dataset avec >2 tables (ex: "Clinical Trial Simulation")
-- [ ] "SQL for Data Scientists" Ch. 2-3 (if you bought it) → 2h
+**Concepts:**
+- [ ] Typical clinical schemas (patients, visits, labs, adverse events, concomitant meds)
+- [ ] CDISC standards (basics) – review structure
+- [ ] Thinking in data models vs thinking in spreadsheets
 
-**Exercices :**
-- [ ] LeetCode : 10 exercises supplémentaires (Medium-Hard)
-- [ ] Réfléchir : "Comment j'joindrais ces tables pour voir inconsistances?"
+**Resources:**
+- [ ] CDISC (cdisc.org): browse "Standards Overview" → 30 min
+- [ ] Kaggle: find multi-table dataset (e.g., "Clinical Trial Simulation")
+- [ ] "SQL for Data Scientists" Ch. 2-3 (if purchased) → 2h
 
-**Projet Semaine 3-4 : ETL Multi-CRF Simulator (SQL)**
+**Exercises:**
+- [ ] LeetCode: 10 additional exercises (Medium-Hard)
+- [ ] Reflect: "How would I join these tables to detect inconsistencies?"
+
+**Project Weeks 3-4: Multi-CRF ETL Simulator (SQL)**
 
 *Deliverable:* `sql-validator/02_multi_crf_etl.sql`
 
 Setup:
-- [ ] Créer 3-4 fichiers CSV simulant CRFs différents (Demography, Labs, Visits, AEs)
-- [ ] Importer dans PostgreSQL
+- [ ] Create 3-4 CSV files simulating different CRFs (Demographics, Labs, Visits, Adverse Events)
+- [ ] Import into PostgreSQL
 
-Requêtes à écrire :
-- [ ] Schema : créer tables standardisées (CDISC-like)
-- [ ] Transform : réconcilier format entre CRFs
-- [ ] Validate : flags pour inconsistances
-- [ ] Q1 : Joindre demography + labs, checker dates cohérentes
-- [ ] Q2 : Visits alignées avec labs (timing check)
-- [ ] Q3 : Flaguer patients avec AEs mais pas visitées
-- [ ] Q4 : Standardiser units (mg → μg conversion example)
-- [ ] Q5 : Créer table "CLEAN" final + audit trail
+Queries to write:
+- [ ] Schema: create standardized tables (CDISC-like)
+- [ ] Transform: reconcile formats between CRFs
+- [ ] Validate: flag inconsistencies
+- [ ] Q1: Join demographics + labs, verify date consistency
+- [ ] Q2: Visits aligned with labs (timing check)
+- [ ] Q3: Flag patients with adverse events but no follow-up visit
+- [ ] Q4: Standardize units (e.g., mg → μg conversion)
+- [ ] Q5: Create final "CLEAN" table + audit trail
 
 Documentation:
-- [ ] Fichier "ETL_LOGIC.md" : schema, transformations, validations
-- [ ] Diagram simple (dessin ASCII ok) : CRF Input → Validate → Clean Output
+- [ ] File "ETL_LOGIC.md": schema, transformations, validations
+- [ ] Simple diagram (ASCII art acceptable): CRF Input → Validate → Clean Output
 
 GitHub:
-- [ ] Commit : `feat: ETL multi-CRF validator – clinical workflow`
+- [ ] Commit: `feat: multi-CRF ETL validator – clinical workflow`
 
 ---
 
-#### Checkpoint Fin Mois 2
-- [ ] ✅ 20 LeetCode exercices complétés (CTE + Window Functions)
-- [ ] ✅ 2 projets SQL dans GitHub
-- [ ] ✅ Pouvez expliquer : "CTE c'est quoi? Window function? Pourquoi c'est utile pour data quality?"
-- [ ] ✅ GitHub repo en bon état (README rempli, dossiers organisés)
+### Checkpoint End of Month 2
+- [ ] ✅ 20 LeetCode exercises completed (CTE + Window Functions)
+- [ ] ✅ 2 SQL projects in GitHub
+- [ ] ✅ Can explain: "What's a CTE? Window function? Why useful for data quality?"
+- [ ] ✅ GitHub repo in good state (README filled, folders organized)
 
-**Entretien-style check :**
-- [ ] Draw on paper : "Écris requête SQL qui trouve patients avec labs hors range et aucune visite suivi"
-- [ ] Explique : "Comment optimiseriez cette requête?" (parlez index, EXPLAIN PLAN)
+**Interview-style check:**
+- [ ] Write on paper: "Write SQL query finding patients with out-of-range labs and no follow-up visit"
+- [ ] Explain: "How would you optimize this query?" (talk about indexes, EXPLAIN PLAN)
 
 ---
 
-## MOIS 3 : PYTHON PIPELINES
-### Objectif : Automatiser validations, penser "reproductibilité"
+## MONTH 3: PYTHON PIPELINES
 
-#### Semaine 5-6 : Python Pandas + File Handling
-**Concepts :**
-- [ ] Pandas as ETL tool (not just EDA)
+### Week 5-6: Python Pandas + File Handling
+
+**Concepts:**
+- [ ] Pandas as ETL tool (not just data exploration)
 - [ ] Reading/writing Excel, CSV, Parquet
-- [ ] Data cleaning, merging, groupby
+- [ ] Data cleaning, merging, grouping
 - [ ] Memory efficiency, chunking
 - [ ] Functional programming (apply, pipe, map)
 
-**Ressources :**
-- [ ] "Pandas for Everyone" Ch. 4-8 (if bought) → 5-6h read + practice
-- [ ] Real Python : "Pandas Tutorial" (filtré) → 2-3h
-- [ ] Official docs : focus `merge()`, `groupby()`, `apply()`, `pipe()` → 1h reference
+**Resources:**
+- [ ] "Pandas for Everyone" Ch. 4-8 (if purchased) → 5-6h reading + practice
+- [ ] Real Python: "Pandas Tutorial" (filtered) → 2-3h
+- [ ] Official docs: focus on `merge()`, `groupby()`, `apply()`, `pipe()` → 1h reference
 
-**Setup Python Environment :**
-- [ ] Créer folder `python-pipeline/`
+**Python Environment Setup:**
+- [ ] Create folder `python-pipeline/`
 - [ ] `python -m venv venv` (create virtual environment)
 - [ ] Activate venv (`.venv\Scripts\activate` on Windows)
 - [ ] `pip install pandas openpyxl sqlalchemy psycopg2`
-- [ ] Créer `requirements.txt` : `pip freeze > requirements.txt`
+- [ ] Create `requirements.txt`: `pip freeze > requirements.txt`
 
-**Exercices :**
-- [ ] Jupyter notebook : 5 exercices Pandas (reading, merging, cleaning)
-  - [ ] Ex1 : Read multiple CSVs, concat
-  - [ ] Ex2 : Merge on keys, handle duplicates
-  - [ ] Ex3 : Groupby + aggregation
-  - [ ] Ex4 : Apply custom function
-  - [ ] Ex5 : Pipe chaining (functional style)
+**Exercises:**
+- [ ] Jupyter notebook: 5 Pandas exercises (reading, merging, cleaning)
+  - [ ] Ex1: Read multiple CSVs, concatenate
+  - [ ] Ex2: Merge on keys, handle duplicates
+  - [ ] Ex3: Groupby with aggregation
+  - [ ] Ex4: Apply custom function
+  - [ ] Ex5: Pipe chaining (functional style)
 
-**Projet Semaine 5-6 : Clinical Data Validator (Python)**
+**Project Weeks 5-6: Clinical Data Validator (Python)**
 
 *Deliverable:* `python-pipeline/validator.py` + example notebooks
 
 Setup:
-- [ ] Télécharger 2-3 Excel files (Kaggle dataset ou mock CRFs)
-- [ ] Créer Jupyter notebook "01_exploration.ipynb" : explore data
+- [ ] Download 2-3 Excel files (Kaggle dataset or mock CRFs)
+- [ ] Create Jupyter notebook "01_exploration.ipynb": explore data
 
 Build:
-- [ ] Créer module `src/validator.py` avec functions:
+- [ ] Create module `src/validator.py` with functions:
   ```python
   def load_crf(filepath): ...
   def check_missing_data(df): ...
@@ -192,8 +271,8 @@ Build:
   def merge_crfs(df_list): ...
   def generate_report(validation_results): ...
   ```
-- [ ] Écrire dans Jupyter : enchaîner functions, explorer outputs
-- [ ] Créer config file `config/validation_rules.yaml` :
+- [ ] Write in Jupyter: chain functions, explore outputs
+- [ ] Create config file `config/validation_rules.yaml`:
   ```yaml
   age:
     min: 0
@@ -202,38 +281,39 @@ Build:
     min: 50
     max: 500
   ```
-- [ ] Load config en Python, utiliser dans validation
+- [ ] Load config in Python, use in validation
 
 Documentation:
-- [ ] Docstrings dans functions (Google style)
-- [ ] Jupyter notebook commenté
+- [ ] Docstrings in functions (Google style)
+- [ ] Commented Jupyter notebook
 
 GitHub:
-- [ ] Commit : `feat: Python Pandas validator – refactored from SQL`
+- [ ] Commit: `feat: Python Pandas validator – refactored from SQL`
 - [ ] Push Jupyter + validator.py + config
 
 ---
 
-#### Semaine 7-8 : Production-Ready + Logging + CLI
-**Concepts :**
-- [ ] Scripts != Notebooks (structure proper code)
+### Week 7-8: Production-ready + Logging + CLI
+
+**Concepts:**
+- [ ] Scripts ≠ Notebooks (professional code structure)
 - [ ] Logging (DEBUG, INFO, WARNING, ERROR)
-- [ ] Configuration management (externaliser hardcoded values)
+- [ ] Configuration management (externalize hardcoded values)
 - [ ] CLI tools (Click library)
 - [ ] Error handling, exceptions
 
-**Ressources :**
-- [ ] Real Python : "Logging in Python" → 1.5h
-- [ ] Real Python : "Click Tutorial" → 1.5h
-- [ ] Official docs : logging module → reference
+**Resources:**
+- [ ] Real Python: "Logging in Python" → 1.5h
+- [ ] Real Python: "Click Tutorial" → 1.5h
+- [ ] Official docs: logging module → reference
 
-**Setup :**
-- [ ] Organiser structure :
+**Setup:**
+- [ ] Organize structure:
   ```
   python-pipeline/
   ├── src/
   │   ├── __init__.py
-  │   ├── validator.py (core logic)
+  │   ├── validator.py (main logic)
   │   ├── logger.py (logging setup)
   │   └── config.py (load YAML)
   ├── config/
@@ -241,24 +321,24 @@ GitHub:
   ├── main.py (CLI entry point)
   ├── requirements.txt
   ├── README.md
-  └── tests/ (optional but good)
+  └── tests/ (optional but recommended)
   ```
 
-**Exercices :**
-- [ ] Ajouter logging à validator.py (info au chaque step)
-- [ ] Créer logger.py qui setup logging (file + console)
-- [ ] Tester : run script, regardez fichier `.log` créé
+**Exercises:**
+- [ ] Add logging to validator.py (info at each step)
+- [ ] Create logger.py that sets up logging (file + console)
+- [ ] Test: run script, verify `.log` file created
 
-**Projet Semaine 7-8 : Production-Ready Validator**
+**Project Weeks 7-8: Production-Ready Validator**
 
-*Deliverable:* `python-pipeline/main.py` avec CLI
+*Deliverable:* `python-pipeline/main.py` with CLI
 
 Build:
-- [ ] Refactor validator.py en "clean code"
-  - [ ] Type hints : `def load_crf(filepath: str) -> pd.DataFrame:`
-  - [ ] Docstrings complets
-  - [ ] Error handling : try/except
-- [ ] Créer `logger.py` :
+- [ ] Refactor validator.py into "clean code"
+  - [ ] Type hints: `def load_crf(filepath: str) -> pd.DataFrame:`
+  - [ ] Complete docstrings
+  - [ ] Error handling: try/except
+- [ ] Create `logger.py`:
   ```python
   import logging
   def setup_logger(name, log_file='validator.log'):
@@ -269,12 +349,12 @@ Build:
       logger.addHandler(handler)
       return logger
   ```
-- [ ] Créer `main.py` avec Click CLI :
+- [ ] Create `main.py` with Click CLI:
   ```python
   import click
   @click.command()
   @click.option('--input', type=click.Path(exists=True), help='Input data folder')
-  @click.option('--config', type=click.Path(exists=True), help='Validation rules YAML')
+  @click.option('--config', type=click.Path(exists=True), help='YAML validation rules file')
   @click.option('--output', type=click.Path(), help='Output report path')
   def validate(input, config, output):
       """Run clinical data validator"""
@@ -284,11 +364,11 @@ Build:
   if __name__ == '__main__':
       validate()
   ```
-- [ ] Test CLI : `python main.py --input ./data --config ./config/rules.yaml --output ./report.xlsx`
-- [ ] Générer Excel report (usar openpyxl ou xlsxwriter)
+- [ ] Test CLI: `python main.py --input ./data --config ./config/rules.yaml --output ./report.xlsx`
+- [ ] Generate Excel report (use openpyxl or xlsxwriter)
 
 Documentation:
-- [ ] README :
+- [ ] README:
   ```markdown
   # Clinical Data Validator
   Automated validation of clinical trial CRF data.
@@ -299,82 +379,82 @@ Documentation:
   ## Setup
   pip install -r requirements.txt
   ```
-- [ ] Créer example config + example data pour quelqu'un d'autre puisse utiliser
+- [ ] Create example config + example data so someone else can use it
 
 GitHub:
-- [ ] Commit : `refactor: production-ready validator – logging, CLI, type hints`
-- [ ] Tag : `v1.0`
+- [ ] Commit: `refactor: production-ready validator – logging, CLI, type hints`
+- [ ] Tag: `v1.0`
 
 ---
 
-#### Checkpoint Fin Mois 3
-- [ ] ✅ Pandas functions : read, merge, groupby, apply, pipe
-- [ ] ✅ Logging setup + fichier .log créé
-- [ ] ✅ CLI tool fonctionne : `python main.py --help` affiche usage
-- [ ] ✅ Code clean : type hints, docstrings, error handling
-- [ ] ✅ GitHub : 2-3 commits, repo organisé
+### Checkpoint End of Month 3
+- [ ] ✅ Pandas functions: read, merge, groupby, apply, pipe
+- [ ] ✅ Logging setup in place, .log file created
+- [ ] ✅ CLI tool works: `python main.py --help` displays usage
+- [ ] ✅ Clean code: type hints, docstrings, error handling
+- [ ] ✅ GitHub: 2-3 commits, organized repository
 
-**Entretien-style check :**
-- [ ] "Pourquoi tu utilises Pandas plutôt que SQL pour ça?"
-- [ ] "Show me your logger code – comment tu gérerais erreur?"
-- [ ] "Comment tu structurerais ce code pour quelqu'un d'autre?"
+**Interview-style check:**
+- [ ] "Why use Pandas rather than SQL for this?"
+- [ ] "Show me your logging code – how would you handle an error?"
+- [ ] "How would you structure this code for someone else?"
 
 ---
 
-## MOIS 4 : DATA QUALITY + LEAN SIX SIGMA
-### Objectif : Domain expertise "data manager" + thinking process
+## MONTH 4: DATA QUALITY + LEAN SIX SIGMA
 
-#### Semaine 9-10 : Data Quality Frameworks
-**Concepts :**
-- [ ] Dimensions data quality (Accuracy, Completeness, Consistency, Timeliness, Validity)
+### Week 9-10: Data Quality Frameworks
+
+**Concepts:**
+- [ ] Quality dimensions (Accuracy, Completeness, Consistency, Timeliness, Validity)
 - [ ] Validation vs Monitoring
-- [ ] Data quality metrics, scorecards
+- [ ] Quality metrics and dashboards
 - [ ] Root Cause Analysis (RCA)
 - [ ] RACI matrix (data ownership)
 
-**Ressources :**
-- [ ] "The Fundamentals of Data Quality" by David Loshin → 4-5h (if bought)
-- [ ] Ou : Coursera "Data Governance & Quality" 1-2 cours → 6-8h (if doing)
-- [ ] DAMA DMBOK "Data Quality" section (gratuit partiellement) → 2h reference
+**Resources:**
+- [ ] "The Fundamentals of Data Quality" by David Loshin → 4-5h (if purchased)
+- [ ] Or: Coursera "Data Governance & Quality" 1-2 courses → 6-8h
+- [ ] DAMA DMBOK "Data Quality" section (partially free) → 2h reference
 
-**Concepts Practice :**
-- [ ] Créer document : "5 Dimensions of DQ – Examples"
-  - [ ] Accuracy : what does it mean in clinical context?
-  - [ ] Completeness : % data available, by variable
-  - [ ] Consistency : no contradictions across tables
-  - [ ] Timeliness : data available when needed
-  - [ ] Validity : conforms to format/range
-  - [ ] Pour chaque : 1-2 examples cliniques + how to measure
+**Concept Practice:**
+- [ ] Create document: "5 Quality Dimensions – Examples"
+  - [ ] Accuracy: what does it mean in clinical context?
+  - [ ] Completeness: % data available, by variable
+  - [ ] Consistency: no contradictions across tables
+  - [ ] Timeliness: data available when needed
+  - [ ] Validity: conforms to format/range
+  - [ ] For each: 1-2 clinical examples + how to measure
 
-**Projet Semaine 9-10 : Data Quality Scorecard**
+**Project Weeks 9-10: Data Quality Scorecard**
 
 *Deliverable:* `data-quality-scorecard/scorecard.py` + Power BI dashboard
 
 Build:
-- [ ] Télécharger clinical dataset (Kaggle)
-- [ ] Python script `scorecard.py` qui calcule :
+- [ ] Download clinical dataset (Kaggle)
+- [ ] Python script `scorecard.py` that calculates:
   ```python
   def calculate_completeness(df): return 100 - (df.isnull().sum() / len(df) * 100)
-  def calculate_consistency(df): # check for contradictions
+  def calculate_consistency(df): # check contradictions
   def calculate_timeliness(df): # time since last update
   def calculate_validity(df, rules): # % records meeting validation rules
   def generate_scorecard(df, rules): # combined metrics
   ```
-- [ ] Output : CSV avec scores par dimension + overall DQ score
-- [ ] Example : "Completeness: 95%, Validity: 87%, Overall: 91%"
+- [ ] Output: CSV with scores per dimension + overall DQ score
+- [ ] Example: "Completeness: 95%, Validity: 87%, Overall: 91%"
 
 Power BI:
 - [ ] Import CSV output
-- [ ] Créer dashboard simple :
-  - [ ] Card visual : Overall DQ Score
-  - [ ] Gauge : per dimension (Completeness, Validity, etc.)
-  - [ ] Table : metrics by variable
+- [ ] Create simple dashboard:
+  - [ ] Card visual: Overall DQ Score
+  - [ ] Gauge: per dimension (Completeness, Validity, etc.)
+  - [ ] Table: metrics by variable
   - [ ] Trend over time (if applicable)
 - [ ] Screenshot + save .pbix file
 
 GitHub:
-- [ ] Push `scorecard.py` + example output CSV
-- [ ] Document : "DATA_QUALITY_FRAMEWORK.md"
+- [ ] Push `scorecard.py` + example CSV output
+- [ ] Document: "DATA_QUALITY_FRAMEWORK.md"
   ```markdown
   # Data Quality Scorecard
   
@@ -389,86 +469,87 @@ GitHub:
 
 ---
 
-#### Semaine 11-12 : Lean Six Sigma + RCA
-**Concepts :**
+### Week 11-12: Lean Six Sigma + RCA
+
+**Concepts:**
 - [ ] DMAIC cycle (Define, Measure, Analyze, Improve, Control)
-- [ ] Root Cause Analysis (5 Whys, Fishbone)
+- [ ] Root Cause Analysis (5 Whys, Fishbone diagram)
 - [ ] Process thinking
 - [ ] Metrics + targets
 
-**Ressources :**
-- [ ] LinkedIn Learning : "Lean Six Sigma Fundamentals" → 2h
-- [ ] YouTube : "DMAIC Explained" videos → 1h
-- [ ] Medium : articles on data quality RCA → 1h
+**Resources:**
+- [ ] LinkedIn Learning: "Lean Six Sigma Fundamentals" → 2h
+- [ ] YouTube: "DMAIC Explained" videos → 1h
+- [ ] Medium: articles on data quality RCA → 1h
 
-**Case Study Document :**
+**Case Study Document:**
 
 *Deliverable:* `governance/RCA_CASE_STUDY.md`
 
-Scenario (fictif ou inspiré réel) :
-"Study X : 15% of baseline visit records have missing lab values. This delays interim analysis."
+Scenario (fictional or reality-inspired):
+"Study X: 15% of baseline visit records have missing lab values. This delays interim analysis."
 
-Document (2-3 pages) :
-- [ ] **Define :** Problem statement + impact
-- [ ] **Measure :** Quantify issue (15% missing, by site, by lab type, trend)
-- [ ] **Analyze :** Root causes
+Document (2-3 pages):
+- [ ] **Define:** Problem statement + impact
+- [ ] **Measure:** Quantify issue (15% missing, by site, by lab type, trend)
+- [ ] **Analyze:** Root causes
   - [ ] 5 Whys analysis (ask "why?" 5 times)
-  - [ ] Fishbone diagram (causes : People, Process, Data, System)
-  - [ ] Example findings : "Site A has 30% missing, others 10% → training issue?"
-- [ ] **Improve :** Proposed solutions
+  - [ ] Fishbone diagram (causes: People, Process, Data, System)
+  - [ ] Example findings: "Site A has 30% missing, others 10% → training issue?"
+- [ ] **Improve:** Proposed solutions
   - [ ] Enhanced validation at data entry
   - [ ] Site training on SOP
   - [ ] System automation (your validator!)
-- [ ] **Control :** How to ensure stays fixed
-  - [ ] Monitor weekly % missing labs
+- [ ] **Control:** Ensure stays fixed
+  - [ ] Monitor % missing labs weekly
   - [ ] Alert if >10% for any site
   - [ ] Quarterly SOP review
 
 Presentation:
 - [ ] Include simple diagrams (ASCII art OK, or Markdown tables)
-- [ ] Make it "presentable" (good grammar, structure)
+- [ ] Professional format (good grammar, structure)
 
 GitHub:
 - [ ] Push RCA_CASE_STUDY.md
-- [ ] Commit : `docs: Lean Six Sigma RCA case study`
+- [ ] Commit: `docs: Lean Six Sigma RCA case study`
 
 ---
 
-#### Checkpoint Fin Mois 4
-- [ ] ✅ Data Quality dimensions : can explain 5 dimensions with examples
-- [ ] ✅ Scorecard Python script : works, outputs metrics
-- [ ] ✅ Power BI dashboard : visualizes DQ scores
-- [ ] ✅ RCA case study : complete, structured, presentable
-- [ ] ✅ GitHub : organized, good documentation
+### Checkpoint End of Month 4
+- [ ] ✅ Quality dimensions: explain 5 dimensions with examples
+- [ ] ✅ Pandas scorecard script: works, outputs metrics
+- [ ] ✅ Power BI dashboard: visualizes quality scores
+- [ ] ✅ RCA document: complete, structured, professional
+- [ ] ✅ GitHub: organized, clear documentation
 
-**Entretien-style check :**
-- [ ] "Explain 5 dimensions of data quality – which is most important in clinical trials?"
-- [ ] "You see 20% missing data in lab values – walk me through RCA approach"
-- [ ] "How would you monitor that data quality stays good?"
+**Interview-style check:**
+- [ ] "Explain 5 quality dimensions – which most important in clinical trials?"
+- [ ] "You see 20% missing lab data – walk me through RCA approach"
+- [ ] "How would you monitor that quality stays good?"
 
 ---
 
-## MOIS 5 : DATA GOVERNANCE + PORTFOLIO
-### Objectif : "Manager" skills + final polish
+## MONTH 5: DATA GOVERNANCE + PORTFOLIO
 
-#### Semaine 13-14 : Data Governance Basics
-**Concepts :**
+### Week 13-14: Data Governance Basics
+
+**Concepts:**
 - [ ] Data ownership, stewardship, custodianship
-- [ ] Metadata, data catalog
-- [ ] Access control, privacy (GDPR basics)
-- [ ] Documentation standards, SOPs
+- [ ] Metadata and data catalog
+- [ ] Access control and privacy (GDPR basics)
+- [ ] Documentation standards and SOPs
 - [ ] Compliance (21 CFR Part 11 for clinical context)
 
-**Ressources :**
+**Resources:**
 - [ ] Gartner "Data Governance Essentials" (free articles) → 1.5h
 - [ ] DAMA DMBOK "Metadata Management" section → 1.5h
-- [ ] Udemy "Data Governance Fundamentals" ($15 on sale) → 2-3h
+- [ ] Udemy "Data Governance Fundamentals" (~$15 on sale) → 2-3h
 
-**Document :**
+**Document:**
 
 *Deliverable:* `governance/DATA_GOVERNANCE_CHARTER.md`
 
-Template (3-5 pages) :
+Template (3-5 pages):
 ```markdown
 # Data Governance Charter – Clinical Trial XYZ
 
@@ -485,9 +566,9 @@ Template (3-5 pages) :
 | Site Coordinator | Data entry accuracy |
 
 ## 3. Data Quality Standards
-- Completeness : >95% required
-- Timeliness : data within 48h of visit
-- Validation : per attached rules
+- Completeness: >95% required
+- Timeliness: data within 48h of visit
+- Validation: per attached rules
 
 ## 4. Metadata Requirements
 - Variable definitions (CRF + DB)
@@ -514,16 +595,17 @@ Template (3-5 pages) :
 
 GitHub:
 - [ ] Push DATA_GOVERNANCE_CHARTER.md
-- [ ] Commit : `docs: Data Governance Charter template`
+- [ ] Commit: `docs: data governance charter template`
 
 ---
 
-#### Semaine 15-16 : Consolidation + Capstone + Portfolio
-**Portfolio Building :**
-- [ ] Review tout votre travail (SQL, Python, Quality, Governance)
-- [ ] Nettoyer, améliorer READMEs
-- [ ] Vérifier : tous les commits sont bons, messages clairs
-- [ ] Organiser GitHub repo :
+### Week 15-16: Consolidation + Capstone + Portfolio
+
+**Portfolio Consolidation:**
+- [ ] Review all work (SQL, Python, Quality, Governance)
+- [ ] Clean up and improve all READMEs
+- [ ] Verify: all commits are good, clear messages
+- [ ] Organize GitHub repo:
   ```
   clinical-data-projects/
   ├── README.md (main overview)
@@ -544,21 +626,21 @@ GitHub:
       └── RCA_CASE_STUDY.md
   ```
 
-**Capstone Project (8-10h) :**
+**Capstone Project (8-10h):**
 
-*Deliverable:* `CAPSTONE_PROJECT.md` (folder ou README principal)
+*Deliverable:* `CAPSTONE_PROJECT.md` (folder or main README)
 
-Concept : Integrated Clinical Data Solution
-- Combine ALL skills : SQL + Python + Quality + Governance
-- Imagine scenario : "You're data manager for new study"
-- Deliverables :
-  1. [ ] **Data Model** (schema SQL)
+Concept: Integrated Clinical Data Solution
+- Combine ALL skills: SQL + Python + Quality + Governance
+- Imagine scenario: "You're data manager for new study"
+- Deliverables:
+  1. [ ] **Data Model** (SQL schema)
   2. [ ] **Validator** (Python pipeline)
   3. [ ] **Quality Metrics** (Power BI dashboard)
   4. [ ] **Governance Doc** (roles, SOP)
-  5. [ ] **Process Flow** (diagram : data in → validate → clean → analyze)
+  5. [ ] **Process Flow** (diagram: data in → validate → clean → analyze)
 
-Document structure :
+Document structure:
 ```markdown
 # Clinical Data Management Solution – Capstone
 
@@ -573,10 +655,10 @@ Document structure :
 - Key validations
 
 ## 3. Implementation
-- Step 1 : Design (schema, rules)
-- Step 2 : Build (SQL + Python)
-- Step 3 : Monitor (Power BI, logging)
-- Step 4 : Govern (roles, SOP)
+- Step 1: Design (schema, rules)
+- Step 2: Build (SQL + Python)
+- Step 3: Monitor (Power BI, logging)
+- Step 4: Govern (roles, SOP)
 
 ## 4. Results & Metrics
 - Example outputs (screenshots)
@@ -589,56 +671,57 @@ Document structure :
 - Scaling considerations
 ```
 
-Push all:
-- [ ] Commit : `feat: Capstone project – integrated clinical data solution`
-- [ ] Create release : `git tag -a v1.0-capstone -m "Final portfolio"`
+Push everything:
+- [ ] Commit: `feat: capstone project – integrated clinical data solution`
+- [ ] Create release: `git tag -a v1.0-capstone -m "Final portfolio"`
 
-**GitHub Pages (Optional but impressive):**
+**GitHub Pages (optional but impressive):**
 - [ ] Enable GitHub Pages for your repo
 - [ ] Create simple `index.html` or use README as homepage
-- [ ] Share portfolio URL : `https://github.com/yourusername/clinical-data-projects`
+- [ ] Share portfolio URL: `https://github.com/yourusername/clinical-data-projects`
 
 ---
 
-#### Checkpoint Fin Mois 5
-- [ ] ✅ GitHub repo : professional, well-documented, 5+ projects
-- [ ] ✅ Capstone : complete, integrated
-- [ ] ✅ Can talk about : your entire approach, trade-offs, lessons learned
+### Checkpoint End of Month 5
+- [ ] ✅ GitHub repo: professional, well-documented, 5+ projects
+- [ ] ✅ Capstone: complete, integrated
+- [ ] ✅ Can talk about: entire approach, trade-offs, lessons learned
 
-**Final Check Before Interviews :**
-- [ ] ✅ Révisez tout votre code (clean? readable? commented?)
-- [ ] ✅ Testez votre validator sur données nouvelles (fonctionne?)
-- [ ] ✅ Préparez "story" : "Why data manager? Why I want this?"
-- [ ] ✅ Comptez : "In 6 months, I built X, learned Y, ready for Z"
+**Final Check Before Interviews:**
+- [ ] ✅ Review all your code (clean? readable? commented?)
+- [ ] ✅ Test your validator on new data (works?)
+- [ ] ✅ Prepare "story": "Why data manager? Why I want this?"
+- [ ] ✅ Count: "In 6 months, I built X, learned Y, ready for Z"
 
 ---
 
-## MOIS 6 : FLEX / INTERVIEWS / NEXT STEPS
+## MONTH 6: FLEX / INTERVIEWS / NEXT STEPS
 
-### Semaine 17-20 : Interview Prep + Depth
-**If ICON calls (technical interview) :**
-- [ ] Revisit : SQL window functions (write live query)
-- [ ] Revisit : Python basics + your code
-- [ ] Revisit : Data quality concepts
-- [ ] Practice : "Walk me through your validator"
+### Week 17-20: Interview Prep + Depth
 
-**If Internal Role (interviews) :**
-- [ ] Prepare : "Why I want data manager role? What value add?"
-- [ ] Prepare : "My 12 years clinical + new technical skills = ?"
-- [ ] Prepare : Live demo (if possible) of one of your tools
+**If Technical Interview Coming:**
+- [ ] Review: SQL window functions (write live query)
+- [ ] Review: Python basics + your code
+- [ ] Review: data quality concepts
+- [ ] Practice: "Walk me through your validator"
 
-**Learning Buffer :**
+**If Internal Role (interviews):**
+- [ ] Prepare: "Why I want data manager role? What value add?"
+- [ ] Prepare: "My 12 years clinical + new technical skills = ?"
+- [ ] Prepare: live demo (if possible) of one of your tools
+
+**Learning Buffer:**
 - [ ] Pick 1-2 areas where you felt weak, deepen
-- [ ] Examples :
-  - [ ] Airflow/orchestration (advanced SQL/Python)
+- [ ] Examples:
+  - [ ] Orchestration (Airflow – advanced SQL/Python)
   - [ ] Advanced stats (if going data scientist route)
   - [ ] AWS certifications (if going cloud engineer)
 
-### Semaine 21-24 : Transition
-- [ ] Decide : which role/company to pursue?
+### Week 21-24: Transition
+- [ ] Decide: which role/company to pursue?
 - [ ] Keep repo updated (shows active learning)
-- [ ] Network : reach out to ICON alumni, pharma data folks
-- [ ] Negotiate : salary, location, progression
+- [ ] Network: reach out to pharma data professionals
+- [ ] Negotiate: salary, location, progression
 
 ---
 
@@ -646,7 +729,9 @@ Push all:
 
 | Week | Focus | Time | Project | Deliverable |
 |------|-------|------|---------|-------------|
-| 1-2 | SQL basics (CTEs, Window Fn) | 6-8h | Mock validator | SQL script |
+| 0 | Setup | 4-5h | Infrastructure | All tools installed ✅ |
+| 1 | SQL basics + **BONUS Project** | 15-20h | LeetCode + Clinical Pipeline | 7/50 exercises + Complete simulator ✅ |
+| 2 | SQL basics (CTEs, Window Fn) | 6-8h | Continue LeetCode | 25/50 target |
 | 3-4 | SQL advanced (multi-table ETL) | 6-8h | Multi-CRF ETL | SQL script |
 | 5-6 | Python Pandas | 6-8h | Python validator | .py file |
 | 7-8 | Python production (logging, CLI) | 6-8h | CLI tool | main.py |
@@ -682,48 +767,31 @@ Push all:
 
 ## SUCCESS CRITERIA – END OF 6 MONTHS
 
-✅ **Technical :**
+✅ **Technical:**
 - [ ] Write complex SQL queries (CTE, window functions, optimization)
 - [ ] Build Python pipeline (clean code, logging, CLI)
 - [ ] Understand data quality frameworks
 - [ ] Apply Lean Six Sigma thinking
 - [ ] Document governance & compliance
 
-✅ **Portfolio :**
+✅ **Portfolio:**
 - [ ] 5+ GitHub projects, well-documented
 - [ ] README, docstrings, type hints (professional code)
 - [ ] Power BI dashboard example
 - [ ] Capstone project (integrated)
 
-✅ **Interview Ready :**
-- [ ] Technical questions : can answer + explain thinking
-- [ ] Show code : walk through, discuss trade-offs
-- [ ] Domain knowledge : clinical + data = combined strength
-- [ ] Story : clear narrative on why this role, why you're ready
+✅ **Interview Ready:**
+- [ ] Technical questions: can answer + explain thinking
+- [ ] Show code: walk through, discuss trade-offs
+- [ ] Domain knowledge: clinical + data = combined strength
+- [ ] Story: clear narrative on why this role, why you're ready
 
-✅ **Jobs :**
-- [ ] ICON interview : pass technical round, get offer
-- [ ] Internal role : selected + promoted
-- [ ] External roles : can apply confidently (if ICON doesn't work out)
-
----
-
-## NOTES FINALES
-
-1. **This is a guide, not a prison.** If you want to skip ahead, deep-dive one area, or pivot – do it. The spirit is "concept + project" not "follow steps exactly."
-
-2. **Stuck?** 
-   - Stack Overflow for coding problems
-   - r/datascience, r/SQL for concepts
-   - YouTube tutorials for specific concepts (5-10 min clips OK)
-   - Just don't fall into tutorial hell again
-
-3. **Family first.** 7-10h/week is enough. Don't sacrifice family time. Better to be consistent 6h/week than start with 10h/week and burn out.
-
-4. **Celebrate wins.** When you finish each project, even small – commit, push, note it. Momentum matters.
-
-5. **Show your work.** GitHub public + portfolio = your best marketing. Especially for ICON or external roles.
+✅ **Jobs:**
+- [ ] Internal role: selected + promoted
+- [ ] External roles: can apply confidently
 
 ---
 
-**You got this. 6 months, consistent effort, and you're ready. Let's go! 🚀**
+## FINAL NOTES
+
+1. **This is a guide, not a prison.** If you want to skip ahead, deep-dive one
