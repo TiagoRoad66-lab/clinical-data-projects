@@ -12,7 +12,7 @@ Développer compétences SQL, Python, Data Quality et Gouvernance pour rôle Cli
 - `governance/` : Documents gouvernance + RCA
 
 ## 📚 Ressources
-- [Roadmap complet](ROADMAP.md)
+- [Roadmap complet](data_manager_roadmap.md)
 - [Learning Log](LEARNING_LOG.md)
 
 ## 🔗 Repos liés
