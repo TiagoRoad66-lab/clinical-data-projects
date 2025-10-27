@@ -123,7 +123,6 @@
 - [ ] Window Functions (ROW_NUMBER, RANK, LAG, LEAD, SUM OVER)
 - [ ] Subqueries vs JOINs – comparison
 - [ ] Basic optimization (indexes, EXPLAIN PLAN)
-
 **Resources:**
 - [x] LeetCode SQL 50 - First 7 exercises completed
 - [ ] Mode Analytics: CTE section (read + all exercises) → 2-3h
