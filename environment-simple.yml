@@ -1,0 +1,9 @@
+name: clinical-data-projects
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
+  - pandas
+prefix: C:\Users\xtiag\anaconda3\envs\clinical-data-projects
