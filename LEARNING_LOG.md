@@ -50,6 +50,31 @@
 
 ---
 
+## October 28, 2025 - Markdown & Documentation Workflow
+
+### What I Accomplished:
+
+1. **Markdown Syntax & Best Practices:**
+   - Learned Markdown syntax for professional documentation
+   - Understood how Markdown renders in VS Code preview
+   - Learned how GitHub renders Markdown for README files and documentation
+
+2. **Pandoc Document Conversion:**
+   - Set up Pandoc in VS Code for document conversion
+   - Can now convert .md files to Word documents (.docx)
+   - Can convert to OneNote format for easy sharing
+   - Enables sharing technical documentation in business-friendly formats
+
+3. **Documentation Workflow:**
+   - Write documentation in Markdown (clean, version-controlled)
+   - Preview in VS Code for immediate feedback
+   - Convert to Word/OneNote when sharing with non-technical stakeholders
+   - Maintain single source of truth in Git
+
+**Status:** Documentation workflow established ✅
+
+---
+
 ## November 11, 2025 - Development Environment Setup & Python Pipeline Planning
 
 ### What I Accomplished:
@@ -159,6 +184,8 @@ First day of self-paced learning on LeetCode. Basic exercises going well, progre
 - ✅ Git version control
 - ✅ Conda virtual environments
 - ✅ Development workflow (Git Bash, VS Code integration)
+- ✅ Markdown documentation (syntax, formatting, GitHub rendering)
+- ✅ Pandoc document conversion (.md to .docx, OneNote)
 - ✅ SQL basics (SELECT, WHERE, JOIN, ORDER BY)
 - ⏸️ SQL advanced (CTEs, Window Functions) - paused
 - 🔄 Python logging and CLI tools - in progress
@@ -175,7 +202,8 @@ First day of self-paced learning on LeetCode. Basic exercises going well, progre
 
 ### Tools Proficiency
 - ✅ Git/GitHub (repository management, commits, push/pull)
-- ✅ VSCode (project setup, extensions, terminal integration)
+- ✅ VSCode (project setup, extensions, terminal integration, Markdown preview)
+- ✅ Pandoc (document conversion, .md to .docx/OneNote)
 - ✅ DBeaver (PostgreSQL GUI)
 - ✅ Power BI (data import, visualizations, DAX basics)
 - ✅ Python (data generation, ETL, file I/O)
