@@ -30,12 +30,29 @@ def get_summary_stats(df):
     print("\n=== SUMMARY STATISTICS ===")
     print(df.describe())
 
+def explore_categorical(df):
+    """
+    Explore categorical/object columns
+    
+    Args:
+        df: pandas DataFrame
+    """
+    print("\n=== CATEGORICAL COLUMNS ===")
+    
+    # Get all object/categorical columns
+    cat_cols = df.select_dtypes(include=['object']).columns
+    
+    for col in cat_cols:
+        print(f"\n{col}:")
+        print(df[col].value_counts())
+
 
 if __name__ == "__main__":
-    # Load the data
     filepath = "../data/raw/Bells Palsy Clinical Trial.csv"
     df = load_csv(filepath)
     
     if df is not None:
         get_basic_info(df)
         get_summary_stats(df)
+        explore_categorical(df)  # Add this line
+        
