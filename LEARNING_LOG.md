@@ -50,48 +50,79 @@
 
 ---
 
-## Week 1 : SQL Basics - LeetCode SQL 50 (October 24-27, 2025)
+## November 11, 2025 - Development Environment Setup & Python Pipeline Planning
 
-### Exercices LeetCode SQL 50
-- ✅ 7/50 exercices complétés ([SQL 50 Study Plan](https://leetcode.com/studyplan/top-sql-50/))
-- Repo solutions : [SQL-50-leetcode](https://github.com/TiagoRoad66-lab/SQL-50-leetcode)
-- Concepts maîtrisés : SELECT, WHERE, ORDER BY, basic JOINs
-- En cours : poursuivre jusqu'à exercice 20-25
-- Prochains concepts : CTEs, Window Functions (dans exercices avancés)
+### What I Accomplished:
 
-### Progression
-- Date début : 24 Oct 2025
-- Temps investi : ~2h
-- Rythme cible : 7-10h/semaine
+1. **Verified Repository Status:**
+   - Compared local vs remote repository using `git fetch origin` and `git status`
+   - Confirmed local and GitHub are in sync
 
-### Blocages rencontrés
-(Rien pour le moment)
+2. **Virtual Environment Setup:**
+   - Created conda environment: `clinical-data-projects`
+   - Exported dependencies to `environment.yml`
+   - Learned conda stores environments centrally (not in project folder)
 
-### Notes personnelles
-Premier jour d'apprentissage autonome sur LeetCode. Les exercices basiques vont bien, j'avance progressivement. En parallèle, j'ai développé le Clinical Data Pipeline project qui applique ces concepts SQL dans un contexte réel.
+3. **VS Code Configuration:**
+   - Configured Git Bash as integrated terminal
+   - Selected Python interpreter from conda environment
+   - Ready for development work
+
+4. **Next Steps Planning:**
+   - Reviewed project README and roadmap
+   - Ready to start `python-pipeline/` project
+   - Considering pipeline options: validation, ETL, or query generation
+
+**Status:** Environment complete ✅ | Ready to begin Python pipeline development
 
 ---
 
-## Week 2 : SQL Avancé (CTEs + Window Functions) (October 28 - November 3, 2025)
+## 📚 SQL Learning Path (Paused - To Be Resumed Later)
 
-### Objectifs apprentissage
-- [ ] CTEs (Common Table Expressions) – structurer requêtes avec WITH
+### Week 1: SQL Basics - LeetCode SQL 50 (October 24-27, 2025)
+**Status:** ⏸️ Paused (7/50 exercises completed)
+
+**LeetCode SQL 50 Exercises:**
+- ✅ 7/50 exercises completed ([SQL 50 Study Plan](https://leetcode.com/studyplan/top-sql-50/))
+- Solutions repo: [SQL-50-leetcode](https://github.com/TiagoRoad66-lab/SQL-50-leetcode)
+- Concepts mastered: SELECT, WHERE, ORDER BY, basic JOINs
+- In progress: continuing to exercises 20-25
+- Next concepts: CTEs, Window Functions (in advanced exercises)
+
+**Progress:**
+- Start date: October 24, 2025
+- Time invested: ~2 hours
+- Target pace: 7-10h/week
+
+**Blockers encountered:**
+(None at the moment)
+
+**Personal notes:**
+First day of self-paced learning on LeetCode. Basic exercises going well, progressing gradually. In parallel, developed the Clinical Data Pipeline project which applies these SQL concepts in a real context.
+
+---
+
+### Week 2: Advanced SQL (CTEs + Window Functions) (October 28 - November 3, 2025)
+**Status:** ⏸️ Paused - Prioritizing Python pipeline development
+
+**Learning objectives:**
+- [ ] CTEs (Common Table Expressions) – structure queries with WITH
 - [ ] Window Functions – ROW_NUMBER(), RANK(), LAG(), LEAD()
-- [ ] Différence JOIN vs Subqueries
-- [ ] EXPLAIN PLAN – optimisation basique
+- [ ] Difference between JOIN vs Subqueries
+- [ ] EXPLAIN PLAN – basic optimization
 
-### Ressources utilisées
-- LeetCode SQL 50 (exercices 20-35)
-- Mode Analytics SQL Tutorial (si besoin clarification)
+**Resources used:**
+- LeetCode SQL 50 (exercises 20-35)
+- Mode Analytics SQL Tutorial (if clarification needed)
 
-### Exercices planifiés
-- [ ] LeetCode exercices 8-25 (focus CTEs + Window Functions)
-- [ ] Projet "Mock CRF Validator" en SQL (fin semaine 2)
+**Planned exercises:**
+- [ ] LeetCode exercises 8-25 (focus CTEs + Window Functions)
+- [ ] "Mock CRF Validator" project in SQL (end of week 2)
 
-### Prochaines étapes
-- Finir 25 premiers exercices SQL 50
-- Télécharger dataset Kaggle clinique
-- Créer 6 requêtes validation dans `sql-validator/`
+**Next steps (when resumed):**
+- Complete first 25 exercises of SQL 50
+- Download clinical Kaggle dataset
+- Create 6 validation queries in `sql-validator/`
 
 ---
 
@@ -100,16 +131,21 @@ Premier jour d'apprentissage autonome sur LeetCode. Les exercices basiques vont 
 ### Completed Work
 1. ✅ Clinical Data Pipeline (Multi-site trial simulator) - October 2025
 2. ✅ Git setup and repository structure
-3. ✅ LeetCode SQL 50: 7/50 exercises
+3. ✅ Development environment setup (Conda, Git Bash, VS Code) - November 2025
+4. ✅ LeetCode SQL 50: 7/50 exercises
 
 ### In Progress
-1. 🔄 LeetCode SQL 50: targeting 25/50 by end of Week 2
-2. 🔄 SQL Advanced concepts (CTEs, Window Functions)
+1. 🔄 Python Pipeline Development (November 2025)
+
+### Paused (To Resume Later)
+1. ⏸️ LeetCode SQL 50: 7/50 completed, targeting 25/50
+2. ⏸️ SQL Advanced concepts (CTEs, Window Functions)
+3. ⏸️ Mock CRF Validator SQL project
 
 ### Upcoming
-1. Mock CRF Validator SQL project
-2. Python pipeline development
-3. Data Quality scorecard with Power BI
+1. Python pipeline with logging and CLI
+2. Data Quality scorecard with Power BI
+3. Governance documentation
 
 ---
 
@@ -121,9 +157,11 @@ Premier jour d'apprentissage autonome sur LeetCode. Les exercices basiques vont 
 - ✅ PostgreSQL database design
 - ✅ Power BI dashboard creation
 - ✅ Git version control
+- ✅ Conda virtual environments
+- ✅ Development workflow (Git Bash, VS Code integration)
 - ✅ SQL basics (SELECT, WHERE, JOIN, ORDER BY)
-- 🔄 SQL advanced (CTEs, Window Functions)
-- ⏳ Python logging and CLI tools
+- ⏸️ SQL advanced (CTEs, Window Functions) - paused
+- 🔄 Python logging and CLI tools - in progress
 - ⏳ Data quality frameworks
 
 ### Domain Knowledge
@@ -137,12 +175,13 @@ Premier jour d'apprentissage autonome sur LeetCode. Les exercices basiques vont 
 
 ### Tools Proficiency
 - ✅ Git/GitHub (repository management, commits, push/pull)
-- ✅ VSCode (project setup, extensions)
+- ✅ VSCode (project setup, extensions, terminal integration)
 - ✅ DBeaver (PostgreSQL GUI)
 - ✅ Power BI (data import, visualizations, DAX basics)
 - ✅ Python (data generation, ETL, file I/O)
-- 🔄 PostgreSQL (queries, joins, CTEs)
-- ⏳ Python production (logging, CLI, type hints)
+- ✅ Conda (environment management, dependency tracking)
+- ⏸️ PostgreSQL (queries, joins, CTEs) - paused
+- 🔄 Python production (logging, CLI, type hints) - in progress
 
 ---
 
@@ -151,23 +190,39 @@ Premier jour d'apprentissage autonome sur LeetCode. Les exercices basiques vont 
 ### What's Going Well
 - Successfully completed first major portfolio project (Clinical Data Pipeline)
 - Established solid Git workflow and repository structure
-- Making steady progress on LeetCode SQL fundamentals
-- Good balance between theory (LeetCode) and practice (pipeline project)
+- Set up professional development environment with proper tooling
+- Good understanding of virtual environment management
+- Making strategic decisions about project priorities
 
 ### Areas for Improvement
-- Need to increase LeetCode exercise pace to hit 25/50 by end of Week 2
-- Should document more detailed technical decisions in project READMEs
-- Need to practice explaining projects verbally (for interviews)
+- Need to maintain consistent documentation of technical decisions
+- Should practice explaining projects verbally (for interviews)
+- Balance between breadth (trying multiple topics) and depth (completing full projects)
 
 ### Immediate Next Steps (Next 7 days)
-1. Complete LeetCode exercises 8-25 (focus Window Functions, CTEs)
-2. Download Kaggle clinical dataset
-3. Start Mock CRF Validator SQL project
-4. Update Clinical Data Pipeline README with interview talking points
-5. Practice 2-minute project explanation
+1. Design and structure Python pipeline project
+2. Implement modular pipeline components
+3. Add proper logging and error handling
+4. Create CLI interface for automation
+5. Document code and create project README
 
 ### Long-term Goals (6 months)
 - Complete full roadmap: SQL, Python pipelines, Data Quality, Governance
 - Build portfolio of 5-6 substantial projects
 - Secure Clinical Data Manager role
 - Obtain relevant certifications (considering PL-300, DP-900)
+- Resume and complete SQL learning path
+
+---
+
+## Notes on Learning Strategy
+
+**Current Focus:** Python Pipeline Development
+- Prioritizing hands-on project work over theoretical exercises
+- Building production-quality code skills (logging, CLI, documentation)
+- Will return to SQL exercises after completing Python pipeline project
+
+**Rationale:** 
+- Real projects demonstrate job-ready skills more effectively
+- Python pipeline complements completed Clinical Data Pipeline project
+- SQL fundamentals already established through initial exercises and pipeline project
